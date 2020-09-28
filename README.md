@@ -3,6 +3,7 @@
 # Sumário
 
 1. [Introdução](#introdução)  
+1.1 [English material](#English-material)
 2. [Estilo de Código](#estilo-de-código)  
 2.1. [Nomes de Variáveis](#nomes-de-variáveis)  
 2.2. [Nomes de Constantes](#nomes-de-constantes)  
@@ -36,6 +37,11 @@ Achei importante criar este material em PT_BR pois a maioria dos materiais encon
 De maneira semelhante, adaptei o guia do @Kelvin sobre boas práticas em **C++** para um guia específico de **C**, com base em conhecimento prático pessoal e no guia de estilos do curso CS50 (e claro, as próprias aulas do CS50x). (@JoaoVitorDio)
 
 Caso você não concorde com algo ou tenha alguma informação a acrescentar, sinta-se à vontade para criar issues ou enviar pull requests.
+
+## English material
+
+
+For those who aren't able to read portuguese documents (welcome too!), I strongly recommend you to visit https://cs50.readthedocs.io/style/c/. Great part of this document was somehow inspired by that, so, feel free (and suggested) to go and read it by yourself! The purpoise of doing a Brazilian Portuguese version guide is that are few translated guides, which can be a problem for a beginner. Not everything in the guide are about style, therefore, try to search for [Using valgrind to find memory leak](https://www.cprogramming.com/debugging/valgrind.html "Using valgrind to find memory leak"), [Typedef use](https://stackoverflow.com/questions/252780/why-should-we-typedef-a-struct-so-often-in-c "Typedef use"), [Scope rules](https://www.geeksforgeeks.org/scope-rules-in-c/ "Scope rules") and some advice: Remember to take a break and go away from your code, sometimes.
 
 # Estilo de Código
 
@@ -569,5 +575,5 @@ Sempre que estiver empacado na solução de um problema, respire fundo e vá dar
 
 [1]: https://pt.wikipedia.org/wiki/CamelCase "CamelCase"
 [2]: https://en.wikipedia.org/wiki/Snake_case "snake_case"
-[4]: https://pt.wikipedia.org/wiki/Include_guard "Mais informações sobre include guards aqui."
 [3]: https://pinetools.com/convert-spaces-tabs "Conversor de espaços para hard tabs"
+[4]: https://pt.wikipedia.org/wiki/Include_guard "Mais informações sobre include guards aqui."
