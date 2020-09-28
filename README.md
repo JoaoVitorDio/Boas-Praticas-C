@@ -31,7 +31,7 @@ Este documento apresenta um guia rápido de boas práticas em **C** (baseado no 
 
 As informações apresentadas neste guia foram obtidas de alguns materiais (livros e blogs), citados nas referências, e de conhecimento prático pessoal.
 
-Achei importante criar este material em PT_BR pois a maioria dos materiais encontrados estão escritos na língua do Tio Sam, o que dificulta um pouco o entendimento, principalmente para os iniciantes. Além disso, tentei resumir de forma bem prática e direta alguns conceitos básicos de forma que este material possa ser utilizado como um guia de consulta rápida. (@Kelvin)
+Achei importante criar este material em PT_BR pois a maioria dos materiais encontrados estão escritos na língua do Tio Sam, o que dificulta um pouco o entendimento, principalmente para os iniciantes. Além disso, tentei resumir de forma bem prática e direta alguns conceitos básicos de forma que este material possa ser utilizado como um guia de consulta rápida. (@Kelvins)
 
 De maneira semelhante, adaptei o guia do @Kelvin sobre boas práticas em **C++** para um guia específico de **C**, com base em conhecimento prático pessoal e no guia de estilos do curso CS50 (e claro, as próprias aulas do CS50x). (@JoaoVitorDio)
 
