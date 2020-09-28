@@ -34,7 +34,7 @@
 Este documento apresenta um guia rápido de boas práticas em **C++** e é voltado para iniciantes na linguagem mas também pode ser útil para desenvolvedores intermediários.
 
 As informações apresentadas neste guia foram obtidas de alguns materiais (livros e blogs), citados nas referências, e de conhecimento prático pessoal.
-
+(Esse guia foi escrito por @kelvins e pode ser encontrado no seu perfil!)
 Achei importante criar este material em PT_BR pois a maioria dos materiais encontrados estão escritos na língua do Tio Sam, o que dificulta um pouco o entendimento, principalmente para os iniciantes. Além disso, tentei resumir de forma bem prática e direta alguns conceitos básicos de forma que este material possa ser utilizado como um guia de consulta rápida.
 
 Caso você não concorde com algo ou tenha alguma informação a acrescentar, sinta-se à vontade para criar issues ou enviar pull requests.
