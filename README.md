@@ -72,7 +72,7 @@ Utilize um padrão já conhecido para a declaração das variáveis, como por ex
 
 Em **C**, diferentemente de em **C++**, o padrão mais adotado é o **snake_case**. Raramente se vê códigos utilizando CamelCase, e quando há, normalmente são reservados para **structs** ou **typedefs**. (Não é regra)
 
-Entretanto, quando trabalhando em um projeto conjunto, é interessante usar sempre o mesmo padrão de nomenclatura já vigente, desde que seja um dos citados acima.
+Entretanto, quando trabalhando em um projeto conjunto, é interessante usar sempre o mesmo padrão de nomenclatura já vigente, que provavelmente será um dos citados acima (se não for, talvez valha a pena sugerir uma padronização rs).
 
 ## Nomes de Constantes
 
@@ -97,6 +97,11 @@ Nomes de funções devem começar com a primeira letra minúscula, assim como as
 **Bom**
 ```c
 void my_function();
+```
+
+**Apenas diferente**
+```c
+void myFunction();
 ```
 
  **Ruim**
@@ -127,7 +132,7 @@ int equal( int value1, int value2 )
 }
 ```
 
-Caso seja necessário comentar um bloco de código para debugar ou por algum outro motivo, você não terá problemas, por exemplo:
+Caso seja necessário comentar um bloco de código para debugar ou por algum outro motivo, você não terá problemas, como por exemplo:
 
 **Bom**
 ```c
