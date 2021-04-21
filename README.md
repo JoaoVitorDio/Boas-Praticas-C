@@ -51,14 +51,14 @@ Todo projeto possui seu estilo de código, alguns com algumas práticas mais ava
 
 Variáveis devem sempre começar com letra minúscula, por exemplo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 char myWeirdVariable;
 // ou
 char my_weird_variable;
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 char MyWeird_Variable2;
 // ou
@@ -78,13 +78,13 @@ Entretanto, quando trabalhando em um projeto conjunto, é interessante usar semp
 
 Constantes devem ser declaradas sempre em letras maiúsculas (caixa alta). Isso também vale para MACROS ("defines").
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 #define MAX 500
 const double PI = 3.14159;
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 #define max 500
 const double pi = 3.14159;
@@ -94,17 +94,17 @@ const double pi = 3.14159;
 
 Nomes de funções devem começar com a primeira letra minúscula, assim como as variáveis. Em C, as funções majoritariamente são escritas em snake_case:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 void my_function();
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+ **Ruim**
 ```c
 void MyFunction();
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Pior ainda
+**Pior ainda**
 ```c
 void My_Function();
 ```
@@ -129,7 +129,7 @@ int equal( int value1, int value2 )
 
 Caso seja necessário comentar um bloco de código para debugar ou por algum outro motivo, você não terá problemas, por exemplo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 int equal( int value1, int value2 )
 {
@@ -147,7 +147,7 @@ int equal( int value1, int value2 )
 
 Caso contrário, não seria possível comentar o bloco de código inteiro, por exemplo:
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 int equal( int value1, int value2 )
 {
@@ -177,7 +177,7 @@ O mais comum é a indentação ou recuo de código utilizando 4 espaços, 2 espa
 
 Não utilize números 'mágicos', por exemplo:
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 double calc( double value )
 {
@@ -187,7 +187,7 @@ double calc( double value )
 
 Nestes casos opte por definir uma constante, por exemplo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 const double PI = 3.14159;
 
@@ -199,7 +199,7 @@ double calc( double value )
 
 Mas utilize, SIM, números, quando isso fizer sentido, por exemplo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 double calc( double value )
 {
@@ -207,7 +207,7 @@ double calc( double value )
 }
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 #define TWO 2
 
@@ -221,7 +221,7 @@ double calc( double value )
 
 Arquivos de cabeçalho (header files) devem utilizar guards para evitar problemas com a inclusão do mesmo arquivo múltiplas vezes e previnir conflitos com cabeçalhos de outros projetos. [Include_guards][4]
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 #ifndef MYTAD_H
 #define MYTAD_H
@@ -234,7 +234,7 @@ struct my_struct
 #endif
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 struct my_struct
 {
@@ -249,7 +249,7 @@ Há desenvolvedores que se utilizam das chaves na mesma linha da função/estrut
 
 A não utilização de chaves pode causar erros semânticos no código, por exemplo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 int sum = 0;
 for (int i = 0; i < 15; ++i)
@@ -259,13 +259,13 @@ for (int i = 0; i < 15; ++i)
 }
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 for (int i = 0; i < 15; ++i)
     printf("%d", i);
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Erro semântico
+***Erro semântico***
 ```c
 int sum = 0;
 for (int i = 0; i < 15; ++i)
@@ -277,7 +277,7 @@ for (int i = 0; i < 15; ++i)
 
 Mantenha as linhas com um comprimento razoável. Caso a linha seja muito extensa, tenha muitos caracteres, vale a pena quebrá-la em múltiplas linhas, por exemplo:
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 if( (x == 1 && y == 2 && myFunction() == true) || (x == 0 && y == 0 && myFunction() == false) )
 {
@@ -285,7 +285,7 @@ if( (x == 1 && y == 2 && myFunction() == true) || (x == 0 && y == 0 && myFunctio
 }
 ```
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 if( (x == 1 && y == 2 && myFunction() == true) ||
     (x == 0 && y == 0 && myFunction() == false) )
@@ -298,13 +298,13 @@ if( (x == 1 && y == 2 && myFunction() == true) ||
 
 Utilize aspas duplas (`""`) para incluir arquivos locais.
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 #include <stdio.h>
 #include <my_header.h>
 ```
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 #include <stdio.h>
 #include "my_header.h"
@@ -331,7 +331,7 @@ Lembrando: As funções de alocação e desalocação de memória heap fazem par
 O uso da função assert() (que faz parte da biblioteca assert.h) substitui todo o código de verificação. Se a condição não for atendida, a função interromperá o fluxo do programa instantaneamente.
 Sistemas Unix possuem uma ferramenta de terminal (incluída nos pacotes de desenvolvedor, comumente) super útil para verificar programas com vazamento de memória e ajudar a identificá-los. Procure por **Valgrind**.
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 #include <stdlib.h>
 
@@ -362,7 +362,7 @@ free(matriz);
 
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 #include <stdlib.h>
 
@@ -387,7 +387,7 @@ Sempre verifique seus programas com o Valgrind.
 
 Códigos não mais utilizados (comentados) devem ser deletados, por exemplo:
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 int equal( int value1, int value2 )
 {
@@ -411,7 +411,7 @@ int equal( int value1, int value2 )
 }
 ```
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 int equal( int value1, int value2 )
 {
@@ -431,12 +431,12 @@ Assim o código fica mais limpo e mais fácil de compreender.
 
 Sempre que possível, evite a utilização de muitos parâmetros em funções. Funções com muitos parâmetros são geralmente difíceis de compreender. Se necessário, refatore a função.
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 void show_user_information(char *firstName, char *lastName, char *gender, int age, double height, double weight);
 ```
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 // Onde 'User' é uma estrutura de dados
 void show_user_information(user *individual_user);
@@ -444,26 +444,26 @@ void show_user_information(user *individual_user);
 
 ## Utilize espaços em branco para melhor visualização
 
-**Não consigo expressar a ênfase que eu gostaria de dar para essa dica específica**, é ultra relevante e *ignorada por muitos* . :unamused:
+**Não consigo expressar a ênfase que eu gostaria de dar para essa dica específica**, é ultra relevante e *ignorada por muitos* .
 
 Utilize espaços em branco para melhor visualização, por exemplo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 if ((majorVersion == 2 && minorVersion == 5) || majorVersion >= 3)
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 if((majorVersion==2 && minorVersion==5) || majorVersion>=3)
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Pior ainda
+**Pior ainda**
 ```c
 if((majorVersion==2&&minorVersion==5)||majorVersion>=3)
 ```
 
-Não é bem um padrão, mas nos cursos de ciência da computação de Harvard (onde eu aprendi), os espaços são usados assim, de acordo com o tipo de ferramenta da linguagem:
+Não é bem um padrão, mas, nos cursos de ciência da computação de Harvard (em que me inspirei para adquirir o meu estilo de escrita de código e cujo material está linkado no fim desse README), os espaços são usados assim, de acordo com o tipo de ferramenta da linguagem:
 
 **Funções**:
 
@@ -508,7 +508,7 @@ p_my_pointer -> struct_infos = some value;
 
 Sempre que possível, limite o escopo das variáveis. É útil em termos de otimização de espaço da memória, quanto de legibilidade e compreensão do código, visto que o uso das variáveis estará logo nas linhas abaixo:
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
 //	Declarando a variável de contagem dentro do laço
 //	e garantindo seu curto período de vida na memória
@@ -518,7 +518,7 @@ for (int i = 0; i < 15; ++i)
 }
 ```
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 int i;
 for (i = 0; i < 15; ++i)
@@ -533,7 +533,7 @@ for (i = 0; i < 15; ++i)
 
 Pelo bem da legibilidade do seu código, não congestione-o com inúmeras variáveis, parâmetros e quaisquer outros fins da sua estrutura com "struct nome_da_estrutura nome_da_variavel". Sempre utilize typedefs para as suas estruturas e sobretudo, nas mais comuns.
 
-![#f03c15](https://placehold.it/12/f03c15/000000?text=+) Ruim
+**Ruim**
 ```c
 struct carro 
 {
@@ -543,20 +543,20 @@ struct carro
 
 struct carro carrinho; 
 
-void verify_car_year(struct carro carrinho);
+void verifica_ano_do_carro(struct carro carrinho);
 ```
 
-![#c5f015](https://placehold.it/12/c5f015/000000?text=+) Bom
+**Bom**
 ```c
-typedef struct
+typedef struct carro
 {
 	int ano;
 	char[TAM_PLACA] placa_do_carro;
-} carro;
+} carro_t;
 
-carro carrinho; 
+carro_t carrinho; 
 
-void verify_car_year(carro carrinho);
+void verifica_ano_do_carro(carro_t carrinho);
 ```
 
 ## Pare e dê uma volta
