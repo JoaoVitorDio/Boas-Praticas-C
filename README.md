@@ -496,7 +496,7 @@ int x = variable % random_value;
 ```c
 typedef struct 
 {
-		int struct_infos;
+    int struct_infos;
 } my_struct_type;
 
 my_struct_type variable, *p_my_pointer;
